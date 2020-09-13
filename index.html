@@ -8,7 +8,7 @@
     <header>
       <div class="container">
         <div class="header_top">
-            <img src="https://via.placeholder.com/220x47" class="logo" alt="">
+            <a href=""><img src="https://via.placeholder.com/220x47" class="logo" alt=""></a>
             <div class="search_wrap">
               <img src="https://via.placeholder.com/17x17" class="search_icon" alt="">
               <input type="search">
@@ -25,6 +25,8 @@
             </div>
             <button type="button" class="order">Оформить заказ</button>
         </div>
+      </div>
+      <div class="container">
         <div class="header_info">
             <span class="header_description">
               Интернет-магазин <br>
@@ -32,13 +34,13 @@
               и инструментов для ремонта
             </span>
             <div class="header_contact">
-              <a href="tel:+7(812)555-05-55" class="header_tel">
+              <a href="tel:+78125550555" class="header_tel">
                 <img src="https://via.placeholder.com/19x19" class="phone_icon" alt="">
                 <span>+7 (812) 555-05-55</span>
               </a>
               <p class="address">Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
-            <a href="" class="sign_in">
+            <a href="#" class="sign_in">
               <img src="https://via.placeholder.com/20x17" class="sign_in_icon" alt="">
               <span>Войти</span>
             </a>
@@ -60,7 +62,6 @@
     <main>
       <section class="info">
         <div class="container">
-
           <ul class="categories">
             <li>
               <div class="list-item">
@@ -84,44 +85,42 @@
               </div>
               <img src="https://via.placeholder.com/19x19" class="list-item_img" alt="">
             </li>
+            <li>
+              <div class="carousel">
+                <div class="carousel_item">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a href="catalog.html">Открыть каталог</a>
+                </div>
+                <div class="carousel_arrows">
+                  <button type="button" class="carousel_arrows-left">
+                    <img src="https://via.placeholder.com/21x40" alt="">
+                  </button>
+                  <button type="button" class="carousel_arrows-right">
+                    <img src="https://via.placeholder.com/21x40" alt="">
+                  </button>
+                </div>
+                <div class="carousel_dots">
+                  <span class="carousel_dot"></span>
+                  <span class="carousel_dot active"></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="list-item">
+                <h3>Скидки 50%</h3>
+                <a href="">НА 350 ТОВАРОВ</a>
+              </div>
+              <img src="https://via.placeholder.com/19x19" class="list-item_img" alt="">
+            </li>
+            <li>
+              <div class="list-item">
+                <h3>Доставка</h3>
+                <a href="">БЕСПЛАТНО</a>
+              </div>
+              <img src="https://via.placeholder.com/19x19" class="list-item_img" alt="">
+            </li>
           </ul>
-          <div class="info_bottom">
-            <div class="carousel">
-              <div class="carousel_item">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html">Открыть каталог</a>
-              </div>
-              <div class="carousel_arrows">
-                <button type="button" class="carousel_arrows-left">
-                  <img src="https://via.placeholder.com/21x40" alt="">
-                </button>
-                <button type="button" class="carousel_arrows-right">
-                  <img src="https://via.placeholder.com/21x40" alt="">
-                </button>
-              </div>
-              <div class="carousel_dots">
-                <span class="carousel_dot"></span>
-                <span class="carousel_dot active"></span>
-              </div>
-            </div>
-            <ul class="offers">
-              <li>
-                <div class="list-item">
-                  <h3>Скидки 50%</h3>
-                  <a href="">НА 350 ТОВАРОВ</a>
-                </div>
-                <img src="https://via.placeholder.com/19x19" class="list-item_img" alt="">
-              </li>
-              <li>
-                <div class="list-item">
-                  <h3>Доставка</h3>
-                  <a href="">БЕСПЛАТНО</a>
-                </div>
-                <img src="https://via.placeholder.com/19x19" class="list-item_img" alt="">
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
       <section class="production_list">
@@ -229,9 +228,9 @@
           <div class="services_slider">
             <div class="services_slider-title">
               <ul>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Кредит</a></li>
+                <li><button type="button" class="services_slider_btn">Доставка</button></li>
+                <li><button type="button" class="services_slider_btn">Гарантия</button></li>
+                <li><button type="button" class="services_slider_btn">Кредит</button></li>
               </ul>
             </div>
             <div class="services_slider-info">
@@ -248,9 +247,9 @@
           </div>
         </div>
       </section>
-      <section class="contacts_list">
+      <div class="contacts_list">
         <div class="container">
-          <div class="description_company">
+          <section class="description_company">
             <h2>КОМПАНИЯ «ТEХНОМАРТ»</h2>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
@@ -267,8 +266,8 @@
               <li>ЖелДорЭкспедиция</li>
             </ul>
             <a href="" class="company_link">ПОДРОБНЕЕ О КОМПАНИИ</a>
-          </div>
-          <div class="contacts_company">
+          </section>
+          <section class="contacts_company">
             <h2>КОНТАКТЫ</h2>
             <p>
               Вы можете забрать товар сами, <br>
@@ -276,9 +275,9 @@
             </p>
             <img src="https://via.placeholder.com/300x158" class="company_image" alt="">
             <a href="" class="company_link">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="container">
