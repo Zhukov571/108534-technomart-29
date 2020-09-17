@@ -6,7 +6,7 @@
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/">
+	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,7 +14,7 @@
 	<header>
 		<div class="header-top">
 			<div class="container">
-				<a href="#" class="header-top-link">
+				<a href="#" class="header-top-link no-decoration">
 					<img src="https://via.placeholder.com/220x47" class="logo" alt="">
 				</a>
 				<div class="search-wrap">
@@ -42,7 +42,7 @@
 					и инструментов для ремонта
 				</span>
 				<div class="header-contact">
-					<a href="tel:+78125550555" class="header-contact-tel">
+					<a href="tel:+78125550555" class="header-contact-tel no-decoration">
 						<img src="https://via.placeholder.com/19x19" class="header-contact-icon" alt="">
 						<span class="header-contact-numer">+7 (812) 555-05-55</span>
 					</a>
@@ -59,84 +59,104 @@
 			</div>
 		</div>
 		<nav class="nav">
-			<ul class="main-nav">
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Главная</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Компания</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="catalog.html">Каталог</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Новости</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Спецпредложения</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Доставка</a></li>
-				<li class="main-nav-item"><a class="main-nav-link" href="#">Контакты</a></li>
+			<ul class="main-nav list">
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Главная</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Компания</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="catalog.html">Каталог</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Новости</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Спецпредложения</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Доставка</a></li>
+				<li class="main-nav-item"><a class="main-nav-link no-decoration" href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<div class="container">
 			<div class="box-breadcrumbs">
-				<ul class="breadcrumbs">
+				<ul class="breadcrumbs list">
 					<li class="breadcrumbs-item">
-						<a href="index.html">
+						<a class="breadcrumbs-link no-decoration" href="index.html">
 							<img src="https://via.placeholder.com/14x12" class="breadcrumbs-icon" alt="">
 						</a>
 					</li>
-					<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
-					<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Инструмент</a></li>
-					<li>Перфораторы</li>
+					<li class="breadcrumbs-item">
+						<a class="breadcrumbs-link no-decoration" href="#">Каталог</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a class="breadcrumbs-link no-decoration" href="#">Инструмент</a>
+					</li>
+					<li class="breadcrumbs-item">Перфораторы</li>
 				</ul>
 			</div>
 			<h2 class="description-name">Перфораторы</h2>
 			<section class="filters-section">
-				<ul class="filters">
-					<li class="filters-item">Фильтр:</li>
-					<li class="filters-item">Сортировка:</li>
-					<li class="filters-item">По цене:</li>
-					<li class="filters-item">По типу:</li>
-					<li class="filters-item">По фцнкционалу:</li>
-					<li class="filters-item">
-						<button class="up-btn">
-							<img src="https://via.placeholder.com/11x10" class="up-btn-icon" alt="">
-						</button>
-						<button class="down-btn">
-							<img src="https://via.placeholder.com/11x10" class="down-btn-icon" alt="">
-						</button>
-					</li>
-				</ul>
+				<div class="filter-box">
+					<h3 class="filter-description">Сортировка:</h3>
+					<ul class="filters list">
+						<li class="filters-item active-item">По цене:</li>
+						<li class="filters-item">По типу:</li>
+						<li class="filters-item">По фцнкционалу:</li>
+						<li class="filters-item">
+							<button class="up-btn">
+								<img src="https://via.placeholder.com/11x10" class="up-btn-icon" alt="">
+							</button>
+							<button class="down-btn">
+								<img src="https://via.placeholder.com/11x10" class="down-btn-icon" alt="">
+							</button>
+						</li>
+					</ul>
+				</div>
 				<div class="price-perforator">
 					<div class="prise-line-box">
+						<div class="description-box">
+							<h3 class="filter-description">Фильтр:</h3>
+						</div>
 						<h3 class="filter-caption">Цена:</h3>	
 						<div class="filter-range">
 							<!-- ползунок добавлю после изучения формы, так как это элемент формы -->
 						</div>
 						<h3 class="filter-caption">Производители:</h3>
-						<ul class="manufacturers-line">
-							<li class="manufacturers-line-item"><input class="manufacturers-check" type="checkbox"
+						<ul class="manufacturers-line list">
+							<li class="manufacturers-line-item">
+								<input class="manufacturers-check" type="checkbox"
 									checked>Bosch</li>
-							<li class="manufacturers-line-item"><input class="manufacturers-check" type="checkbox">Интерскол
+							<li class="manufacturers-line-item">
+								<input class="manufacturers-check" type="checkbox">Интерскол
 							</li>
-							<li class="manufacturers-line-item"><input class="manufacturers-check" type="checkbox"
+							<li class="manufacturers-line-item">
+								<input class="manufacturers-check" type="checkbox"
 									checked>Makita</li>
-							<li class="manufacturers-line-item"><input class="manufacturers-check" type="checkbox">Dewalt
+							<li class="manufacturers-line-item">
+								<input class="manufacturers-check" type="checkbox">Dewalt
 							</li>
-							<li class="manufacturers-line-item"><input class="manufacturers-check" type="checkbox">Hitachi
+							<li class="manufacturers-line-item">
+								<input class="manufacturers-check" type="checkbox">Hitachi
 							</li>
 						</ul>
 						<h3 class="filter-caption">Питание:</h3>
-						<ul class="acumulator">
-							<li class="acumulator-item"><label><input type="radio" name="features" />Аккумуляторные</label>
+						<ul class="acumulator list">
+							<li class="acumulator-item">
+								<label><input type="radio" name="features" />Аккумуляторные</label>
 							</li>
-							<li class="acumulator-item"><label><input type="radio" name="features" />Сетевые</label></li>
+							<li class="acumulator-item">
+								<label><input type="radio" name="features" />Сетевые</label>
+							</li>
 						</ul>
-						<button type="button">Показать</button>
+						<button type="button" class="show-btn">Показать</button>
 					</div>
 				</div>
 			</section>
 			<div class="marks-perforators">
-				<ul class="products">
+				<ul class="products list">
 					<li class="products-item">
 						<img src="https://via.placeholder.com/144x128" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 6000</h3>
 						</a>
 						<div class="price-wrap">
@@ -146,9 +166,13 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/144x128" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 6000</h3>
 						</a>
 						<div class="price-wrap">
@@ -158,9 +182,13 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 6000</h3>
 						</a>
 						<div class="price-wrap">
@@ -170,10 +198,14 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a class="products-description" href="#">
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 3000</h3>
 						</a>
 						<div class="price-wrap">
@@ -183,9 +215,13 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 6000</h3>
 						</a>
 						<div class="price-wrap">
@@ -196,9 +232,13 @@
 					<li class="products-item">
 						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 2000</h3>
 						</a>
 						<div class="price-wrap">
@@ -208,9 +248,13 @@
 					<li class="products-item">
 						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 6000</h3>
 						</a>
 						<div class="price-wrap">
@@ -220,9 +264,15 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
-						<a class="products-description" href="#">Перфоратор Bosch BFG 6000</a>
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<a class="products-description no-decoration" href="#">
+							<h3>Перфоратор Bosch BFG 6000</h3>
+						</a>
 						<div class="price-wrap">
 							<span class="old-price">30500 Р.</span>
 							<span class="new-price">25500 Р.</span>
@@ -230,27 +280,33 @@
 					</li>
 					<li class="products-item">
 						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<a href="#"><img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить</a>
-						<a href="#">В закладки</a>
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
 						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
-						<a class="products-description" href="#">Перфоратор Bosch BFG 2000</a>
+						<a class="products-description no-decoration" href="#">
+							<h3>Перфоратор Bosch BFG 2000</h3>
+						</a>
 						<div class="price-wrap">
 							<span class="new-price">12500 Р.</span>
 						</div>
 					</li>
 				</ul>
-				<ul class="pages">
-					<li class="number-page"><a class="page-link" href="#">1</a></li>
-					<li class="number-page"><a class="page-link" href="#">2</a></li>
-					<li class="number-page"><a class="page-link" href="#">3</a></li>
-					<li class="next-page"><a class="page-link-next" href="#">Следующая</a></li>
+				<ul class="pages list">
+					<li class="number-page"><a class="page-link no-decoration" href="#">1</a></li>
+					<li class="number-page"><a class="page-link no-decoration" href="#">2</a></li>
+					<li class="number-page"><a class="page-link no-decoration" href="#">3</a></li>
+					<li class="number-page next-page"><a class="page-link next-page no-decoration" href="#">Следующая</a></li>
 				</ul>
 			</div>
 		</div>
 		<article class="afterword-perforators">
 			<div class="container">
-				<h2 class="afterword-perforators-description">Пара слов о перфораторах</h2>
-				<p class="afterword-perforators-description-text">
+				<h2 class="afterword-perforators-description services-description">Пара слов о перфораторах</h2>
+				<p class="afterword-perforators-description-text services-text">
 					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
 					в кирпиче, бетоне и камне.<br>
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
@@ -270,41 +326,41 @@
 					<a href="tel:+7(812)555-05-55" class="footer-adress-link">+7 (812) 555-05-55</a>
 				</div>
 				<div class="footer-info-navs">
-					<ul class="footer-nav-top">
+					<ul class="footer-nav-top list">
 						<li class="footer-nav-top-item">
-							<a href="#" class="footer-nav-top-link">Главная</a>
+							<a href="#" class="footer-nav-top-link no-decoration">Главная</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="#">Компания</a>
+							<a class="footer-nav-top-link no-decoration" href="#">Компания</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="catalog.html">Каталог</a>
+							<a class="footer-nav-top-link no-decoration" href="catalog.html">Каталог</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="#">Новости</a>
+							<a class="footer-nav-top-link no-decoration" href="#">Новости</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="#">Спецпредложения</a>
+							<a class="footer-nav-top-link no-decoration" href="#">Спецпредложения</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="#">Доставка</a>
+							<a class="footer-nav-top-link no-decoration" href="#">Доставка</a>
 						</li>
 						<li class="footer-nav-top-item">
-							<a class="footer-nav-top-link" href="#">Контакты</a>
+							<a class="footer-nav-top-link no-decoration" href="#">Контакты</a>
 						</li>
 					</ul>
-					<ul class="footer-nav-bottom">
+					<ul class="footer-nav-bottom list">
 						<li class="footer-nav-bottom-item">
-							<a class="footer-nav-bottom-item-link" href="#">Материалы</a>
+							<a class="footer-nav-bottom-item-link no-decoration" href="#">Материалы</a>
 						</li>
 						<li class="footer-nav-bottom-item">
-							<a class="footer-nav-bottom-item-link" href="#">Техника</a>
+							<a class="footer-nav-bottom-item-link no-decoration" href="#">Техника</a>
 						</li>
 						<li class="footer-nav-bottom-item">
-							<a class="footer-nav-bottom-item-link" href="#">Инструмент</a>
+							<a class="footer-nav-bottom-item-link no-decoration" href="#">Инструмент</a>
 						</li>
 						<li class="footer-nav-bottom-item">
-							<a class="footer-nav-bottom-item-link" href="#">Спецпредложения</a>
+							<a class="footer-nav-bottom-item-link no-decoration" href="#">Спецпредложения</a>
 						</li>
 					</ul>
 				</div>
@@ -315,23 +371,23 @@
 					&copy;Все права защищены
 				</span>
 				<div class="socials">
-					<a href="#" class="socials-link">
+					<a href="#" class="socials-link no-decoration">
 						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
 					</a>
-					<a href="#" class="socials-link">
+					<a href="#" class="socials-link no-decoration">
 						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
 					</a>
-					<a href="#" class="socials-link">
+					<a href="#" class="socials-link no-decoration">
 						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
 					</a>
 				</div>
 				<div class="mail">
 					<h3 class="mail-text">Обратная связь:</h3>
-					<a class="mail-link" href="#">mail@htmlacademy.ru</a>
+					<a class="mail-link no-decoration" href="#">mail@htmlacademy.ru</a>
 				</div>
 				<div class="creater">
 					<h3 class="creater-text">Разработано — </h3>
-					<a class="creater-link" href="#">htmlacademy.ru</a>
+					<a class="creater-link no-decoration" href="#">htmlacademy.ru</a>
 				</div>
 			</div>
 		</div>
