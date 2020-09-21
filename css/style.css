@@ -6,13 +6,16 @@
     --basic-dark-opacity-03-color: rgba(0, 0, 0, 0.3);
     --basic-opacity-3-color: rgba(255, 255, 255, 0.3);
     --secondary-color: #000;
+    --secondary-black-color: #161D29;
     --orange-light-color: #FFD180;
     --orange-color: #FFBF47;
     --main-red-color: #EE3643;
     --main-red-dark-color: #CA2C37;
+    --dark-red-color: #BA2732;
     --navy-blue-color: #212A3A;
     --main-dark-blue-color: #293449;
     --dark-blue-color: #32425C;
+    --dark-blue-opacity-color: rgba(50, 66, 92, 0.3);
     --grey-color: #A9A9A9;
     --grey-medium-light-color: #F2F6F8;
     --grey-opacity-3-color: rgba(197, 197, 197, 0.3);
@@ -22,6 +25,7 @@
     --green-color: #63A63E;
     --green-color-hover: #5FBB2D;
     --green-light-color: #8ED78F;
+    --green-dark-color: #518534;
     --green-box-shadow: inset 0px -3px 0px #367315;
     --beige-color: #F9F5F0;
     --beige-ligt-color: #F7F3EC;
@@ -29,12 +33,16 @@
     --blue: #3BBCE3;
     --pink: #DC91D8;
     --layout-color: rgba(0, 0, 0, 0.25);
+    --main-nav-box-shadow: inset 0px -5px 0px #293449;
   
    
     /* decoration */
     --basic-text-decoration: none;
     --hover-text-decoration: underline;
     --basic-list-style: none;
+
+    --fill-color: #C5C5C5;
+    --fill-dark-blue: #3D546F;
 }
 
 body {
@@ -61,11 +69,49 @@ body {
     line-height: 24px;
 }
 
+.search-icon path,
+.bookmark-icon path,
+.basket-icon path {
+    fill: var(--basic-color);
+    opacity: 0.3;
+}
+
+.search-wrap:hover path,
+.bookmark-wrap:hover path,
+.basket-wrap:hover path {
+    opacity: 1;
+}
+
+.bookmark-wrap:active path {
+    opacity: 0.3;
+}
+
+.bookmark-wrap:active {
+    background-color: var(--secondary-black-color);
+}
+
+
+.search-wrap:active path,
+.basket-wrap:active path {
+    opacity: 0.3;
+}
+
+.catalog-page {
+    background-color: var(--main-red-color);
+    max-width: 142px;
+    width: 100%;
+}
+
+
+
 .order {
     color: var(--basic-color);
     background-color: var(--green-color);
     border: none;
+    max-width: 150px;
+    width: 100%;
 }
+
 
 .order:hover {
     background-color: var(--green-color-hover);
@@ -111,12 +157,55 @@ body {
  }
 
  .sign-in:hover , 
- .register:hover {
+ .register:hover,
+ .area:hover,
+ .area-link:hover {
     color: var(--main-red-color);
  }
 
-/* navigation */
+.sign-in:hover path{
+    fill: var(--fill-dark-blue);
+ }
 
+ .sign-in:active,
+ .sign-in-icon:active, 
+ .register:active,
+ .area:active path,
+ .area-link:active,
+ .user-box-name:active,
+ .user-logout-btn:active {
+     opacity: 0.3;
+ }
+
+ .area li:first-child {
+    list-style-type: var(--basic-list-style);
+}
+
+.area-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--dark-blue-color);
+}
+
+.user-icon path,
+.logout-icon path {
+    fill: var(--basic-color);
+    opacity: 1;
+}
+
+.user-logout-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.user-box-name:hover path,
+.user-logout-btn:hover path {
+    fill: var(--fill-dark-blue);
+}
+
+/* navigation */
 .nav {
     background-color: var(--dark-blue-color);
 }
@@ -131,6 +220,12 @@ body {
 
 .main-nav-link:hover {
     background-color: var(--main-dark-blue-color);
+}
+
+.main-nav-link:active {
+    background-color: var(--main-dark-blue-color);
+    box-shadow: var(--main-nav-box-shadow);
+    color: var(--basic-opacity-3-color);
 }
 
 .main {
@@ -158,6 +253,10 @@ body {
 
 .categories-link:hover {
     background-color: var(--grey-opacity-3-color);
+}
+
+.categories-link:active {
+    background-color: var(--grey-color);
 }
 
 .yellow-box {
@@ -207,8 +306,12 @@ body {
     line-height: 18px;
 }
 
-.carousel-link:hover {
+.btn-optional:hover {
     background-color: var(--main-red-dark-color);
+}
+
+.btn-optional:active {
+    background-color: var(--dark-red-color);
 }
 
 /* production-list */
@@ -223,6 +326,14 @@ body {
     font-size: 14px;
 }
 
+.product-bue:hover {
+    background-color: var(--green-color-hover);
+}
+
+.product-bue:active {
+    background-color: var(--green-dark-color);
+}
+
 .product-bue {
     color: var(--basic-color);
     background-color: var(--green-color);
@@ -230,10 +341,20 @@ body {
     border-radius: 2px;
 }
 
+.product-bookmark:hover {
+    border: 3px solid var(--dark-blue-color);
+    border-radius: 2px;
+}
+
+.product-bookmark:active {
+    border: 3px solid var(--dark-blue-opacity-color);
+    color: var(--dark-blue-opacity-color);
+    border-radius: 2px;
+}
+
 .product-bookmark {
     color: var(--dark-blue-color);
     background-color: var(--basic-color);
-    box-shadow: var(--green-box-shadow);
     border: 3px solid var(--green-color);
     border-radius: 2px;
 }
@@ -294,8 +415,13 @@ body {
     border: 1px solid var(--basic-dark-color);
 }
 
-.manufacturer-link:hover {
+.manufacturer-icon-item:hover {
     box-shadow: 0px 4px 20px var(--basic-dark-opacity-015-color);
+    border: 1px solid var(--basic-dark-color);
+}
+
+.manufacturer-icon-item:active {
+    opacity: 0.3;
 }
 
 /* services-list */
@@ -328,13 +454,14 @@ body {
     line-height: 30px;
     background-color: var(--dark-blue-color);
     color: var(--basic-color);
+    border: none;
 }
 
 .services-slider-btn:hover {
     background-color: var(--main-dark-blue-color);
 }
 
-.services-active-btn {
+.services-slider-btn:active {
     box-shadow: 0px 1px 0px var(--basic-color);
     color: var(--dark-blue-color);
     background-color: var(--basic-color);
@@ -356,6 +483,13 @@ body {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+}
+
+/* services-slider-info background-image */
+.services-slider-info {
+    background-image: url('../img/truck.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 /* contacts-list */
@@ -398,9 +532,6 @@ body {
     background-color: var(--main-red-color);
 }
 
-.company-link:hover {
-    background-color: var(--main-red-dark-color);
-}
 
 .contacts-company-description {
     font-style: normal;
@@ -457,6 +588,10 @@ body {
     background: var(--main-red-color);
 }
 
+.socials-link:active {
+    background: var(--main-red-color);
+}
+
 .footer-nav-bottom-item-link {
     color: var(--orange-light-color);
     font-style: normal;
@@ -470,6 +605,12 @@ body {
 .mail-link:hover, 
 .creater-link:hover {
     text-decoration: var(--hover-text-decoration);
+}
+
+.footer-nav-top-link:active,
+.footer-nav-bottom-item-link:active {
+    text-decoration: var(--basic-text-decoration);
+    opacity: 0.3;
 }
 
 /* footer-bottom */
@@ -501,6 +642,12 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+}
+
+.mail-link:active, 
+.creater-link:active {
+    color: var(--dark-red-color);
+    text-decoration: var(--basic-text-decoration);
 }
 
 
@@ -540,18 +687,60 @@ body {
     text-transform: uppercase;
 }
 
-.filters-item {
+.filters-link {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-dark-opacity-03-color);
+    border-bottom: 1px dotted var(--main-red-color);
+    text-transform: uppercase;
 }
 
-.active-item {
-    color: var(--main-red-color);
+.filters-link:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--main-red-color);
 }
+
+.filters-link:active {
+   color: var(--main-red-color);
+   border: none;
+}
+
+.filters-item:last-child {
+    border-bottom: none;
+}
+
+.up-btn,
+.down-btn {
+   border: none;
+   cursor: pointer;
+ }
+
+.down-btn-arrow {
+    transform: rotate(180deg);
+}
+
+.filters-btn {
+    fill: var(--fill-color);
+}
+
+.up-btn:hover path,
+.down-btn:hover path{
+    fill: var(--secondary-color);
+}
+
+.up-btn:active path,
+.down-btn:active path {
+    fill: var(--main-red-color);
+}
+
+/* checkbox - radio */
+.check-type {
+    color: var(--fill-color);
+}
+
 
 .filter-caption {
     font-family: 'PT Sans', 'Arial', sans-serif;
@@ -589,8 +778,21 @@ body {
     padding: 10px 0;
     max-width: 220px;
     width: 100%;
+    cursor: pointer;
 }
 
+a.active-page {
+    background-color: var(--main-red-color);
+    color: var(--basic-color);
+}
+
+.page-link:hover {
+    border: 1px solid var(--fill-color);
+}
+
+.page-link:active {
+    border: 1px solid var(--main-red-color);
+}
 
 .page-link {
     display: block;
@@ -601,7 +803,7 @@ body {
     line-height: 18px;
     border: 1px solid var(--grey-white-color);
     border-radius: 2px;
-    background-color: var(),var(--basic-color);
+    background-color: var(--basic-color);
     color: var(--secondary-color);
     padding: 10px 0;
     max-width: 38px;
@@ -619,3 +821,7 @@ body {
 .afterword-perforators {
     background-color: var(--grey-blue-color);
 }
+
+
+
+

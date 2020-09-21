@@ -14,22 +14,30 @@
 	<header>
 		<div class="header-top">
 			<div class="container">
-				<a href="#" class="header-top-link no-decoration">
-					<img src="https://via.placeholder.com/220x47" class="logo" alt="">
+				<a href="./index.html" class="header-top-link no-decoration">
+					<img src="./img/logo.svg" width="220" height="47" class="logo" alt="Логотип">
 				</a>
 				<div class="search-wrap">
-					<img src="https://via.placeholder.com/17x17" class="search-icon" alt="">
+					<svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+						</svg>
 					<input type="search" class="search-field">
 				</div>
-				<div class="bookmark">
-					<img src="https://via.placeholder.com/14x15" class="bookmark-icon" alt="">
+				<div class="bookmark-wrap">
+					<svg class="bookmark-icon" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"/>
+						</svg>
 					<span class="bookmark-text">Закладки:</span>
 					<span class="bookmark-number">0</span>
 				</div>
-				<div class="basket">
-					<img src="https://via.placeholder.com/14x15" class="basket-icon" alt="">
+				<div class="basket-wrap catalog-page">
+					<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+						<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+						<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+						</svg>
 					<span class="basket-text">Корзина:</span>
-					<span class="basket-number">0</span>
+					<span class="basket-number">10</span>
 				</div>
 				<button type="button" class="order">Оформить заказ</button>
 			</div>
@@ -43,17 +51,28 @@
 				</span>
 				<div class="header-contact">
 					<a href="tel:+78125550555" class="header-contact-tel no-decoration">
-						<img src="https://via.placeholder.com/19x19" class="header-contact-icon" alt="">
+						<img src="./img/icon-phone.svg"  width="19" height="19" class="header-contact-icon" alt="Телефон">
 						<span class="header-contact-numer">+7 (812) 555-05-55</span>
 					</a>
 					<p class="address">Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="user-box">
-					<div class="user-box-name">
-						<img src="https://via.placeholder.com/20x18" class="user-icon" alt="">
-						<p class="user-name">Равшан Джамшутович</p>
-						<button class="user-logout-btn"><img src="https://via.placeholder.com/20x17" class="logout-icon"
-								alt=""></button>
+					<div class="user-box-wrap">
+						<div class="user-box-name">
+							<svg class="user-icon" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"/>
+								</svg>
+							<span class="user-name">Равшан Джамшутович</span>
+						</div>
+
+						<button class="user-logout-btn"><svg class="logout-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"/>
+							<path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z"/>
+							</svg></button>
+						<ul class="area">
+							<li class="area-item"><a class="area-link no-decoration" href="#">Мои заказы</a></li>
+							<li class="area-item"><a class="area-link no-decoration" href="#">Личный кабинет</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -76,7 +95,7 @@
 				<ul class="breadcrumbs list">
 					<li class="breadcrumbs-item">
 						<a class="breadcrumbs-link no-decoration" href="index.html">
-							<img src="https://via.placeholder.com/14x12" class="breadcrumbs-icon" alt="">
+							<img src="./img/icon-home.svg" width="14" height="12" class="breadcrumbs-icon" alt="home-icon">
 						</a>
 					</li>
 					<li class="breadcrumbs-item">
@@ -93,15 +112,26 @@
 				<div class="filter-box">
 					<h3 class="filter-description">Сортировка:</h3>
 					<ul class="filters list">
-						<li class="filters-item active-item">По цене:</li>
-						<li class="filters-item">По типу:</li>
-						<li class="filters-item">По фцнкционалу:</li>
+						<li class="filters-item active-item">
+							<a class="filters-link no-decoration" href="#">По цене:
+
+							</a></li>
+						<li class="filters-item">
+							<a class="filters-link no-decoration" href="#">По типу:</a>
+						</li>
+						<li class="filters-item">
+							<a class="filters-link no-decoration" href="#">По Функционалу:</a>
+						</li>
 						<li class="filters-item">
 							<button class="up-btn">
-								<img src="https://via.placeholder.com/11x10" class="up-btn-icon" alt="">
+								<svg class="up-btn-arrow filters-btn" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.66241 0L11.1624 10L0.162415 10"/>
+									</svg>
 							</button>
 							<button class="down-btn">
-								<img src="https://via.placeholder.com/11x10" class="down-btn-icon" alt="">
+								<svg class="down-btn-arrow filters-btn" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.66241 0L11.1624 10L0.162415 10"/>
+									</svg>
 							</button>
 						</li>
 					</ul>
@@ -118,28 +148,28 @@
 						<h3 class="filter-caption">Производители:</h3>
 						<ul class="manufacturers-line list">
 							<li class="manufacturers-line-item">
-								<input class="manufacturers-check" type="checkbox"
+								<input class="manufacturers-check check-type" type="checkbox"
 									checked>Bosch</li>
 							<li class="manufacturers-line-item">
-								<input class="manufacturers-check" type="checkbox">Интерскол
+								<input class="manufacturers-check check-type" type="checkbox">Интерскол
 							</li>
 							<li class="manufacturers-line-item">
-								<input class="manufacturers-check" type="checkbox"
+								<input class="manufacturers-check check-type" type="checkbox"
 									checked>Makita</li>
 							<li class="manufacturers-line-item">
-								<input class="manufacturers-check" type="checkbox">Dewalt
+								<input class="manufacturers-check check-type" type="checkbox">Dewalt
 							</li>
 							<li class="manufacturers-line-item">
-								<input class="manufacturers-check" type="checkbox">Hitachi
+								<input class="manufacturers-check check-type" type="checkbox">Hitachi
 							</li>
 						</ul>
 						<h3 class="filter-caption">Питание:</h3>
 						<ul class="acumulator list">
 							<li class="acumulator-item">
-								<label><input type="radio" name="features" />Аккумуляторные</label>
+								<label><input class="radio-btn check-type" type="radio" name="features"/>Аккумуляторные</label>
 							</li>
 							<li class="acumulator-item">
-								<label><input type="radio" name="features" />Сетевые</label>
+								<label><input class="radio-btn check-type" type="radio" name="features"/>Сетевые</label>
 							</li>
 						</ul>
 						<button type="button" class="show-btn">Показать</button>
@@ -149,10 +179,14 @@
 			<div class="marks-perforators">
 				<ul class="products list">
 					<li class="products-item">
-						<img src="https://via.placeholder.com/144x128" class="products-icon" alt="">
+						<img src="./img/bfg-6000.png" width="144" height="128" class="products-icon" alt="perforator-bfg-6000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+									</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -165,10 +199,14 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/144x128" class="products-icon" alt="">
+						<img src="./img/bfg-6000.png" width="144" height="128" class="products-icon" alt="perforator-bfg-6000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -181,10 +219,14 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
+						<img src="./img/bfg-6000.png" width="144" height="128" class="products-icon" alt="perforator-bfg-6000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -197,14 +239,17 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
+						<img src="./img/bfg-3000.png" width="127" height="112" class="products-icon" alt="perforator-bfg-3000">
 						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 3000</h3>
 						</a>
@@ -214,10 +259,14 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
+						<img src="./img/bfg-6000.png" width="144" height="128" class="products-icon" alt="perforator-bfg-6000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -230,11 +279,14 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
+						<img src="./img/bfg-3000.png" width="127" height="112" class="products-icon" alt="perforator-bfg-2000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -246,11 +298,34 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
+							</a>
+							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
+						</div>
+						<img src="./img/bfg-3000.png" width="127" height="112" class="products-icon" alt="perforator-bfg-3000">
+						<a class="products-description no-decoration" href="#">
+							<h3>Перфоратор Bosch BFG 3000</h3>
+						</a>
+						<div class="price-wrap">
+							<span class="old-price">30500 Р.</span>
+							<span class="new-price">25500 Р.</span>
+						</div>
+					</li>
+					<li class="products-item">
+						<img src="./img/bfg-6000.png" width="144" height="128" class="products-icon" alt="perforator-bfg-6000">
+						<div class="products-link-box">
+							<a class="products-link product-bue no-decoration" href="#">
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
@@ -263,30 +338,17 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
+						<img src="./img/bfg-3000.png" width="127" height="112" class="products-icon" alt="perforator-bfg-2000">
 						<div class="products-link-box">
 							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
+								<svg class="basket-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"/>
+									<path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"/>
+									<path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z"/>
+								</svg>Купить
 							</a>
 							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
 						</div>
-						<a class="products-description no-decoration" href="#">
-							<h3>Перфоратор Bosch BFG 6000</h3>
-						</a>
-						<div class="price-wrap">
-							<span class="old-price">30500 Р.</span>
-							<span class="new-price">25500 Р.</span>
-						</div>
-					</li>
-					<li class="products-item">
-						<img src="https://via.placeholder.com/67x18" class="new-price" alt="">
-						<div class="products-link-box">
-							<a class="products-link product-bue no-decoration" href="#">
-								<img src="https://via.placeholder.com/15x11" class="products-icon" alt="">Купить
-							</a>
-							<a class="products-link product-bookmark no-decoration" href="#">В закладки</a>
-						</div>
-						<img src="https://via.placeholder.com/127x112" class="products-icon" alt="">
 						<a class="products-description no-decoration" href="#">
 							<h3>Перфоратор Bosch BFG 2000</h3>
 						</a>
@@ -296,7 +358,7 @@
 					</li>
 				</ul>
 				<ul class="pages list">
-					<li class="number-page"><a class="page-link no-decoration" href="#">1</a></li>
+					<li class="number-page"><a class="page-link no-decoration active-page" href="#">1</a></li>
 					<li class="number-page"><a class="page-link no-decoration" href="#">2</a></li>
 					<li class="number-page"><a class="page-link no-decoration" href="#">3</a></li>
 					<li class="number-page next-page"><a class="page-link next-page no-decoration" href="#">Следующая</a></li>
@@ -321,7 +383,7 @@
 		<div class="container">
 			<div class="footer-info">
 				<div class="footer-info-contact">
-					<img src="https://via.placeholder.com/220x68" class="footer-logo" alt="">
+					<img src="./img/footer-logo.png" width="220" height="68" class="footer-logo" alt="footer-logo">
 					<p class="footer-address">Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<a href="tel:+7(812)555-05-55" class="footer-adress-link">+7 (812) 555-05-55</a>
 				</div>
@@ -372,13 +434,13 @@
 				</span>
 				<div class="socials">
 					<a href="#" class="socials-link no-decoration">
-						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
+						<img src="./img/vk-icon.svg" width="26" height="15" class="socials-icon" alt="vk-icon">
 					</a>
 					<a href="#" class="socials-link no-decoration">
-						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
+						<img src="./img/fb-icon.svg" width="22" height="22" class="socials-icon" alt="fb-icon">
 					</a>
 					<a href="#" class="socials-link no-decoration">
-						<img src="https://via.placeholder.com/44x44" class="socials-icon" alt="">
+						<img src="./img/insta-icon.svg" width="21" height="21" class="socials-icon" alt="insta-icon">
 					</a>
 				</div>
 				<div class="mail">
