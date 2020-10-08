@@ -1460,13 +1460,45 @@ input::-webkit-inner-spin-button {
 }
 
 .manufacturers-check + label::before {
-    content: '';
+    content: url('../img/checkbox-off.svg');
     position: absolute;
     left: -42px;
     top: -2px;
-    width: 19px;
-    height: 19px;
-    border: 2px solid var(--standart-color);
+}
+
+.manufacturers-check:checked + label::before {
+    content: url('../img/checkbox-on.svg');
+    position: absolute;
+    left: -42px;
+    top: -2px;
+}
+
+.manufacturers-check:hover + label::before {
+    content: url('../img/checkbox-off-hover.svg');
+    position: absolute;
+    left: -42px;
+    top: -2px;
+}
+
+.manufacturers-check:checked:hover + label::before {
+    content: url('../img/checkbox-on-hover.svg');
+    position: absolute;
+    left: -42px;
+    top: -2px;
+}
+
+.manufacturers-check:disabled:hover + label::before {
+    content: url('../img/checkbox-off-disable.svg');
+    position: absolute;
+    left: -42px;
+    top: -2px;
+}
+
+.manufacturers-check:checked:disabled:hover + label::before {
+    content: url('../img/checkbox-on-disable.svg');
+    position: absolute;
+    left: -42px;
+    top: -2px;
 }
 
 .radio-btn + label::before {
@@ -1480,32 +1512,17 @@ input::-webkit-inner-spin-button {
     border-radius: 50%;
 }
 
-.manufacturers-check:hover + label,
 .radio-btn:hover + label {
     color: var(--hover-checkbox-color);
 }
 
-.manufacturers-check:hover + label::before,
 .radio-btn:hover + label::before {
     border-color: var(--hover-checkbox-color);
 }
 
-.manufacturers-check:disabled + label::before,
 .radio-btn:disabled + label::before {
     color: var(--hover-checkbox-color);
     opacity: 0.3;
-}
-
-.manufacturers-check:disabled + label::before {
-    border-color: var(--hover-checkbox-color);
-    opacity: 0.3;
-}
-
-.manufacturers-check:checked + label::after {
-    content: url('../img/checkbox-cheket.svg');
-    position: absolute;
-    left: -41px;
-    top: -2px;
 }
 
 .radio-btn:checked + label::after {
@@ -1519,17 +1536,6 @@ input::-webkit-inner-spin-button {
     border-radius: 50%;
 }
 
-.radio-btn:hover + label::after {
-    content: '';
-    position: absolute;
-    left: -35px;
-    top: 5px;
-    width: 9px;
-    height: 9px;
-    background-color: var(--hover-checkbox-color);
-    border-radius: 50%;
-}
-
 .filter-caption {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-style: normal;
@@ -1539,7 +1545,6 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase;
     color: var(--secondary-color);
     background-color: var(--basic-color);
-
 }
 
 .filter-item {
