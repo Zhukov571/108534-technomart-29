@@ -245,7 +245,10 @@ input::-webkit-inner-spin-button {
     margin: auto 0;
 }
 
-
+.basket-icon,
+.bookmark-icon {
+    margin-right: 8px;
+}
 
 .search-icon path,
 .bookmark-icon path,
@@ -273,14 +276,23 @@ input::-webkit-inner-spin-button {
 
 .bookmark-wrap:active {
     background-color: var(--secondary-black-color);
+    padding: 11px 0;
 }
 
 .basket-wrap:active path {
     opacity: 0.3;
 }
 
+.bookmark-wrap,
+.basket-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .basket-full {
     background-color: var(--main-red-color);
+    padding: 11px 0;
 }
 
 .order {
@@ -716,7 +728,7 @@ input::-webkit-inner-spin-button {
 .products-catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 20px;
 }
 
 
@@ -742,17 +754,18 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    position: relative;
+    padding-bottom: 21px;
 }
 
 /* Временное решение для удобства обозревания */
 .products-item > img {
-    max-width: 144px;
     width: 100%;
-    max-height: 128px;
-    height: 100%;
+    height: 150px;
+    margin-bottom: 38px;
 }
 
 .products-link-box {
@@ -760,16 +773,37 @@ input::-webkit-inner-spin-button {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 38px;
+    left: auto;
 }
+
+.products-icon:hover {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.products-item:hover .products-icon {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .products-item:hover .products-link-box {
+    opacity: 1;
+    transition: 0.3s;
+  }
 
 .products-link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-}
-
-.products-link:last-child {
-    margin-bottom: 54px;
+    box-sizing: border-box;
 }
 
 .product-bue {
@@ -859,6 +893,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: auto;
 }
 
 .old-price {
