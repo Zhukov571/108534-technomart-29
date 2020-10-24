@@ -2015,6 +2015,10 @@ span.nav-current:hover {
     -moz-appearance: textfield;
 }
 
+.none-arrows {
+    appearance: none;
+}
+
 .price-controls {
 	display: flex;
 	justify-content: space-between;
