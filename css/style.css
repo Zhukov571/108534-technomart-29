@@ -506,12 +506,10 @@
     background-color: var(--basic-color);
 }
 
-.sign-in:hover , 
-.register:hover,
-.area-link:hover {
+.sign-in:hover, 
+.register:hover {
 	color: var(--main-red-color);
 }
-
 
 .sign-in-icon path,
 .user-icon path,
@@ -524,50 +522,83 @@
 	fill: var(--fill-dark-blue);
 }
 
-.area-link:active,
 .sign-in:active,
 .register:active {
-    color: #C5C5C5;
+    color: var(--fill-color);
 }
 
 .sign-in:active path {
-    fill: #C5C5C5;
+    fill: var(--fill-color);
 }
-
 
 .user-box-name:active,
 .user-logout-btn:active {
     opacity: 0.3;
 }
 
-.area-item:last-child {
-	margin-left: 24px;
-}
-
-.area-item:first-child .area-link {
+.my-orders{
 	position: relative;
 	z-index: 0;
 	margin-right: 9px;
 } 
 
-.area-item:first-child .area-link::after {
+.personal-area {
+    margin-left: 24px;
+    position: relative;
+	z-index: 0;
+}
+
+.my-orders::after {
 	content: '';
 	position: absolute;
 	z-index: 0;
 	width: 4px;
 	height: 4px;
-	background: linear-gradient(0deg, var(--dark-blue-color), var(--dark-blue-color)), #FFFFFF;
+	background: var(--dark-blue-color);
 	border-radius: 50%;
 	top: 7px;
 	right: -18px;
 }
- 
+
+.personal-area::before {
+    content: '';
+	position: absolute;
+	z-index: 0;
+	width: 4px;
+	height: 4px;
+	background: var(--dark-blue-color);
+	border-radius: 50%;
+	top: 7px;
+	right: 118px;
+}
+
+.my-orders:hover::after,
+.personal-area:hover::before {
+    background: var(--main-red-color);
+    z-index: 10;
+}
+
+.my-orders:active::after,
+.personal-area:active::before {
+    background-color: var(--fill-color);
+}
+
 .area-link {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--dark-blue-color);
+}
+
+.area-link:focus,
+.area-link:hover {
+    color: var(--main-red-color);
+    z-index: 9;
+}
+
+.area-link:active {
+   color: var(--fill-color);
 }
 
 .user-logout-btn {
