@@ -288,7 +288,7 @@
 .basket-btn {
     background: transparent;
     border: none;
-    font-family: Cuprum;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -362,8 +362,10 @@
     border: none;
     max-width: 150px;
     width: 100%;
-    padding: 11px 16px 10px 19px;
+    padding: 0 16px 0 10px;
     cursor: pointer;
+    height: 42px;
+    line-height: 42px;
 }
 
 .order:hover {
@@ -605,7 +607,8 @@
 	border: none;
 	background-color: transparent;
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    cursor: pointer;
 }
 
 .user-box-name:hover path,
@@ -1080,7 +1083,6 @@ span.nav-current:hover {
 	z-index: 0;
 	width: 15px;
 	height: 15px;
-	top: 5p;
 	left: 30px;
 }
 
@@ -1774,26 +1776,30 @@ span.nav-current:hover {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 13px;
 	color: var(--basic-dark-opacity-03-color);
 	background-color: transparent;
 	text-transform: uppercase;
     border: none;
-    text-decoration: underline 1px dotted var(--main-red-color);
     cursor: pointer;
     padding: 0;
+    border-bottom: 1px dotted var(--main-red-color);
 }
 
 .filter-btn:hover {
 	color: var(--secondary-color);
-	text-decoration: underline 1px solid var(--main-red-color);
+	border-bottom: 1px dotted var(--main-red-color);
 }
 
-.filter-btn:active,
-.filter-btn-active {
+.filter-btn:active {
 	color: var(--main-red-color);
-	text-decoration: none;
+	border-bottom: none;
 }
+
+/* Active button */
+/* .filter-btn-active  {
+    color: var(--main-red-color);
+} */
 
 .filters-item:last-child {
 	border-bottom: none;
@@ -1816,6 +1822,10 @@ span.nav-current:hover {
 
 .up-btn {
     margin-left: 35px;
+}
+
+.up-btn-acrive path{
+    fill: var(--main-red-color);
 }
 
 .down-btn {
@@ -1854,7 +1864,6 @@ span.nav-current:hover {
 	content: url('../img/checkbox-off.svg');
 	position: absolute;
 	left: -34px;
-	top: -1;
 }
 
 .manufacturers-check:checked + label::before {
@@ -2040,14 +2049,16 @@ span.nav-current:hover {
 	padding: 10px 24px;
 }
 
-.none-arrows {
-    -webkit-appearance: none;
-    margin: 0;
-    -moz-appearance: textfield;
+/* Chrome, Safari, Edge, Opera */
+.none-arrows::-webkit-outer-spin-button,
+.none-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.none-arrows {
-    appearance: none;
+/* Firefox */
+.none-arrows[type=number] {
+  -moz-appearance: textfield;
 }
 
 .price-controls {
