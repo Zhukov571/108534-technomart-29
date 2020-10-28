@@ -445,6 +445,7 @@
 }
 
 .header-info-description {
+    max-width: 182px;
     text-align: left;
     color: var(--main-red-color);
     font-style: italic;
@@ -1788,7 +1789,7 @@ span.nav-current:hover {
 
 .filter-btn:hover {
 	color: var(--secondary-color);
-	border-bottom: 1px dotted var(--main-red-color);
+	border-bottom: 1px solid var(--main-red-color);
 }
 
 .filter-btn:active {
@@ -1796,10 +1797,10 @@ span.nav-current:hover {
 	border-bottom: none;
 }
 
-/* Active button */
-/* .filter-btn-active  {
+.filter-btn-active  {
     color: var(--main-red-color);
-} */
+    border-bottom: none;
+} 
 
 .filters-item:last-child {
 	border-bottom: none;
