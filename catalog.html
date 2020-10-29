@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body">
 	<header class="header-catalog">
@@ -158,12 +158,12 @@
                                     <div class="range-filter">
                                         <div class="range-controls">
                                             <div class="scale">
-                                                <div class="bar" style="width: 50%; margin-left: 20px;">
+                                                <div class="bar" style="width: 70%; margin-left: 20px;">
                                                 </div>
                                             </div>
-                                            <div class="toggle toggle-min" tabindex="0" style="left: 15%;">
+                                            <div class="toggle toggle-min" tabindex="0" style="left: 9%;">
                                             </div>
-                                            <div class="toggle toggle-max" tabindex="0" style="left: 55%;">
+                                            <div class="toggle toggle-max" tabindex="0" style="left: 74%;">
                                             </div>
                                         </div>
                                         <div class="price-controls">
@@ -478,7 +478,7 @@
 					</ul>
 					<div class="footer-info-contact">
 						<p class="footer-address no-padding-margin">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-						<a href="tel:+7(812)555-05-55" class="footer-adress-link no-decoration" aria-label="Номер телефона">+7 (812) 555-05-55</a>
+						<a href="tel:+78125550555" class="footer-adress-link no-decoration" aria-label="Номер телефона">+7 (812) 555-05-55</a>
 					</div>
 					<ul class="footer-nav-bottom list">
 						<li class="footer-nav-bottom-item">
@@ -544,32 +544,34 @@
 	</footer>
 
 	<section class="modal modal-shop" data-modal="modal-shop">
-        <h2 class="modal-title visually-hidden no-padding-margin">Вы добавили товар в корзину</h2>
-		<p class="clouse-btn-repair"></p>
-		<button type="button" class="clouse-btn modal-shop-btn js-modal-close" aria-label="Закрыть окно формы">
-			<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
-					fill="#EE3643" />
-			</svg>
-		</button>
-		<div class="moda-shop-box">
-			<div class="modal-shop-top">
-				<div class="modal-show-icon">
-					<svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M35.641 1.06603C35.2498 0.677292 34.6181 0.677292 34.227 1.06603L15.788 19.504C15.3968 19.8928 14.7651 19.8928 14.374 19.504L6.23396 11.365C5.84278 10.9763 5.21114 10.9763 4.81996 11.365L1.28496 14.9C0.896225 15.2912 0.896225 15.9228 1.28496 16.314L14.374 29.404C14.7651 29.7928 15.3968 29.7928 15.788 29.404L19.324 25.868L20.738 24.454L39.176 6.01603C39.5647 5.62485 39.5647 4.99321 39.176 4.60203L35.641 1.06603Z" fill="white"/>
-					</svg>
-				</div>
-				<h3 class="modal-shop-text">Товар добавлен в корзину!</h3>
-			</div>
-			<div class="modal-shop-bottom">
-				<button class="checkout-btn btn-optional" type="button" aria-label="Оформить заказ">Оформить заказ</button>
-				<button class="continue-shopping-btn btn-optional js-modal-close" type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
-			</div>
-		</div>
+        <div class="modal-wrapper modal-shop__modal-wrapper">
+            <h2 class="modal-title visually-hidden no-padding-margin">Вы добавили товар в корзину</h2>
+            <p class="clouse-btn-repair"></p>
+            <button type="button" class="clouse-btn modal-shop-btn js-modal-close" aria-label="Закрыть окно формы">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
+                        fill="#EE3643" />
+                </svg>
+            </button>
+            <div class="moda-shop-box">
+                <div class="modal-shop-top">
+                    <div class="modal-show-icon">
+                        <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.641 1.06603C35.2498 0.677292 34.6181 0.677292 34.227 1.06603L15.788 19.504C15.3968 19.8928 14.7651 19.8928 14.374 19.504L6.23396 11.365C5.84278 10.9763 5.21114 10.9763 4.81996 11.365L1.28496 14.9C0.896225 15.2912 0.896225 15.9228 1.28496 16.314L14.374 29.404C14.7651 29.7928 15.3968 29.7928 15.788 29.404L19.324 25.868L20.738 24.454L39.176 6.01603C39.5647 5.62485 39.5647 4.99321 39.176 4.60203L35.641 1.06603Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="modal-shop-text">Товар добавлен в корзину!</h3>
+                </div>
+                <div class="modal-shop-bottom">
+                    <button class="checkout-btn btn-optional" type="button" aria-label="Оформить заказ">Оформить заказ</button>
+                    <button class="continue-shopping-btn btn-optional js-modal-close" type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
+                </div>
+            </div>
+        </div>
 	</section>
 
-	<script src="./js/script.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

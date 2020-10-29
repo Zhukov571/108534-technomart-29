@@ -132,3 +132,40 @@ function Tabs() {
 var connectTabs = new Tabs();
 
 /*End Tabs*/
+
+/*form validation*/
+
+function validationform() {
+	var form = document.getElementById('modal-form');
+	var box = document.getElementById('modal-wrapper');
+
+	form.addEventListener('submit', function (e) {
+
+		var nameLength = document.getElementById('name').value.length;
+		var emailLength = document.getElementById('email').value.length;
+		var messageLength = document.getElementById('message').value.length;
+
+		if (nameLength > 0 && emailLength > 0 && messageLength > 0) {
+			return false;
+		} else {
+			e.preventDefault();
+			box.animate([
+				{ transform: 'translateX(0)' }, 
+				{ transform: 'translateX(-10px)' },
+				{ transform: 'translateX(10px)' },
+				{ transform: 'translateX(10px)' },
+				{ transform: 'translateX(-10px)' },
+				{ transform: 'translateX(10px)' },
+				{ transform: 'translateX(-10px)' },
+				{ transform: 'translateX(0)' }
+			  ], {
+				duration: 300,
+				iterations: 2
+			  })
+		}
+	})
+}
+
+validationform();
+
+/*end form validation*/
