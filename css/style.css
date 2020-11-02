@@ -1786,15 +1786,20 @@ span.nav-current:hover {
     border-bottom: 1px dotted var(--main-red-color);
 }
 
-.filter-btn:hover {
+.filter-btn:not(.filter-btn-active):hover {
 	color: var(--secondary-color);
 	border-bottom: 1px solid var(--main-red-color);
 }
 
-.filter-btn:active {
+.filter-btn:not(.filter-btn-active):active {
 	color: var(--main-red-color);
 	border-bottom: none;
 }
+
+.filter-btn-active  {
+    color: var(--main-red-color);
+    border-bottom: none;
+} 
 
 .filters-item:last-child {
 	border-bottom: none;
@@ -1819,6 +1824,10 @@ span.nav-current:hover {
     margin-left: 35px;
 }
 
+.up-btn-active path {
+    fill: var(--main-red-color);
+}
+
 .down-btn {
     margin-right: 5px;
 }
@@ -1831,12 +1840,12 @@ span.nav-current:hover {
 	fill: var(--fill-color);
 }
 
-.up-btn:hover path,
+.up-btn:not(.up-btn-active):hover path,
 .down-btn:hover path{
 	fill: var(--secondary-color);
 }
 
-.up-btn:active path,
+.up-btn:not(.up-btn-active):active path,
 .down-btn:active path {
 	fill: var(--main-red-color);
 }
@@ -2191,11 +2200,11 @@ a.active-page {
 	text-align: center;
 }
 
-.page-link:hover {
+.page-link:not(.active-page):hover {
 	border: 1px solid var(--fill-color);
 }
 
-.page-link:active {
+.page-link:not(.active-page):active {
 	border: 1px solid var(--main-red-color);
 }
 
