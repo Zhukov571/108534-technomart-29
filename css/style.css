@@ -1796,11 +1796,6 @@ span.nav-current:hover {
 	border-bottom: none;
 }
 
-.filter-btn-active  {
-    color: var(--main-red-color);
-    border-bottom: none;
-} 
-
 .filters-item:last-child {
 	border-bottom: none;
 }
@@ -1822,10 +1817,6 @@ span.nav-current:hover {
 
 .up-btn {
     margin-left: 35px;
-}
-
-.up-btn-acrive path{
-    fill: var(--main-red-color);
 }
 
 .down-btn {
